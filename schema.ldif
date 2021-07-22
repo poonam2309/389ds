@@ -1,0 +1,151 @@
+dn: ou=zone1,ou=People,dc=example,dc=com
+objectClass: top
+objectClass: organizationalunit
+ou: zone1
+
+dn: ou=zone2,ou=People,dc=example,dc=com
+objectClass: top
+objectClass: organizationalunit
+ou: zone2
+
+dn: ou=zone3,ou=People,dc=example,dc=com
+objectClass: top
+objectClass: organizationalunit
+ou: zone3
+
+dn: ou=zone4,ou=People,dc=example,dc=com
+objectClass: top
+objectClass: organizationalunit
+ou: zone4
+
+dn: ou=zone5,ou=People,dc=example,dc=com
+objectClass: top
+objectClass: organizationalunit
+ou: zone5
+
+dn: ou=zone6,ou=People,dc=example,dc=com
+objectClass: top
+objectClass: organizationalunit
+ou: zone6
+
+dn: ou=zone7,ou=People,dc=example,dc=com
+objectClass: top
+objectClass: organizationalunit
+ou: zone7
+
+dn: cn=lic-epgs,ou=Groups,dc=example,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: lic-epgs
+uniqueMember: uid=martin,ou=People,dc=example,dc=com
+uniqueMember: uid=lotti,ou=People,dc=example,dc=com
+
+dn: ou=epgs_application,dc=example,dc=com
+objectClass: top
+objectClass: organizationalunit
+ou: epgs_application
+
+dn: ou=CO,ou=epgs_application,dc=example,dc=com
+objectClass: top
+objectClass: organizationalunit
+ou: CO
+
+dn: ou=DO,ou=epgs_application,dc=example,dc=com
+objectClass: top
+objectClass: organizationalunit
+ou: DO
+
+dn: ou=ZO,ou=epgs_application,dc=example,dc=com
+objectClass: top
+objectClass: organizationalunit
+ou: ZO
+
+
+dn: cn=CO_epgs,ou=CO,ou=epgs_application,dc=example,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: CO_epgs
+uniqueMember: uid=user2,ou=zone5,ou=People,dc=example,dc=com
+uniqueMember: uid=user3,ou=zone5,ou=People,dc=example,dc=com
+uniqueMember: uid=user4,ou=zone5,ou=People,dc=example,dc=com
+uniqueMember: uid=user5,ou=zone5,ou=People,dc=example,dc=com
+uniqueMember: uid=user6,ou=zone5,ou=People,dc=example,dc=com
+uniqueMember: uid=user7,ou=zone1,ou=People,dc=example,dc=com
+uniqueMember: uid=user8,ou=zone1,ou=People,dc=example,dc=com
+uniqueMember: uid=user9,ou=zone1,ou=People,dc=example,dc=com
+uniqueMember: uid=user10,ou=zone1,ou=People,dc=example,dc=com
+uniqueMember: uid=user11,ou=zone1,ou=People,dc=example,dc=com
+uniqueMember: uid=user12,ou=zone7,ou=People,dc=example,dc=com
+uniqueMember: uid=user13,ou=zone7,ou=People,dc=example,dc=com
+uniqueMember: uid=user14,ou=zone7,ou=People,dc=example,dc=com
+uniqueMember: uid=user15,ou=zone7,ou=People,dc=example,dc=com
+uniqueMember: uid=user16,ou=zone7,ou=People,dc=example,dc=com
+
+
+dn: cn=DO_epgs,ou=DO,ou=epgs_application,dc=example,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: DO_epgs
+uniqueMember: uid=user52,ou=zone3,ou=People,dc=example,dc=com
+uniqueMember: uid=user53,ou=zone3,ou=People,dc=example,dc=com
+uniqueMember: uid=user54,ou=zone3,ou=People,dc=example,dc=com
+uniqueMember: uid=user55,ou=zone3,ou=People,dc=example,dc=com
+uniqueMember: uid=user56,ou=zone3,ou=People,dc=example,dc=com
+uniqueMember: uid=user57,ou=zone3,ou=People,dc=example,dc=com
+uniqueMember: uid=user42,ou=zone6,ou=People,dc=example,dc=com
+uniqueMember: uid=user43,ou=zone6,ou=People,dc=example,dc=com
+uniqueMember: uid=user44,ou=zone6,ou=People,dc=example,dc=com
+uniqueMember: uid=user45,ou=zone6,ou=People,dc=example,dc=com
+uniqueMember: uid=user46,ou=zone6,ou=People,dc=example,dc=com
+uniqueMember: uid=user47,ou=zone6,ou=People,dc=example,dc=com
+uniqueMember: uid=user48,ou=zone6,ou=People,dc=example,dc=com
+uniqueMember: uid=user49,ou=zone6,ou=People,dc=example,dc=com
+uniqueMember: uid=user50,ou=zone6,ou=People,dc=example,dc=com
+uniqueMember: uid=user51,ou=zone6,ou=People,dc=example,dc=com
+
+
+
+dn: cn=ZO_epgs,ou=DO,ou=epgs_application,dc=example,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: ZO_epgs
+uniqueMember: uid=user22,ou=zone4,ou=People,dc=example,dc=com
+uniqueMember: uid=user23,ou=zone4,ou=People,dc=example,dc=com
+uniqueMember: uid=user24,ou=zone4,ou=People,dc=example,dc=com
+uniqueMember: uid=user25,ou=zone4,ou=People,dc=example,dc=com
+uniqueMember: uid=user26,ou=zone4,ou=People,dc=example,dc=com
+uniqueMember: uid=user27,ou=zone4,ou=People,dc=example,dc=com
+uniqueMember: uid=user28,ou=zone4,ou=People,dc=example,dc=com
+uniqueMember: uid=user29,ou=zone4,ou=People,dc=example,dc=com
+uniqueMember: uid=user30,ou=zone4,ou=People,dc=example,dc=com
+uniqueMember: uid=user31,ou=zone4,ou=People,dc=example,dc=com
+uniqueMember: uid=user32,ou=zone4,ou=People,dc=example,dc=com
+uniqueMember: uid=user33,ou=zone4,ou=People,dc=example,dc=com
+uniqueMember: uid=user34,ou=zone4,ou=People,dc=example,dc=com
+uniqueMember: uid=user35,ou=zone4,ou=People,dc=example,dc=com
+uniqueMember: uid=user36,ou=zone4,ou=People,dc=example,dc=com
+uniqueMember: uid=user37,ou=zone4,ou=People,dc=example,dc=com
+uniqueMember: uid=user38,ou=zone4,ou=People,dc=example,dc=com
+uniqueMember: uid=user39,ou=zone4,ou=People,dc=example,dc=com
+uniqueMember: uid=user40,ou=zone4,ou=People,dc=example,dc=com
+uniqueMember: uid=user41,ou=zone4,ou=People,dc=example,dc=com
+uniqueMember: uid=user22,ou=zone2,ou=People,dc=example,dc=com
+uniqueMember: uid=user23,ou=zone2,ou=People,dc=example,dc=com
+uniqueMember: uid=user24,ou=zone2,ou=People,dc=example,dc=com
+uniqueMember: uid=user25,ou=zone2,ou=People,dc=example,dc=com
+uniqueMember: uid=user26,ou=zone2,ou=People,dc=example,dc=com
+uniqueMember: uid=user27,ou=zone2,ou=People,dc=example,dc=com
+uniqueMember: uid=user28,ou=zone2,ou=People,dc=example,dc=com
+uniqueMember: uid=user29,ou=zone2,ou=People,dc=example,dc=com
+uniqueMember: uid=user30,ou=zone2,ou=People,dc=example,dc=com
+uniqueMember: uid=user31,ou=zone2,ou=People,dc=example,dc=com
+uniqueMember: uid=user32,ou=zone2,ou=People,dc=example,dc=com
+uniqueMember: uid=user33,ou=zone2,ou=People,dc=example,dc=com
+uniqueMember: uid=user34,ou=zone2,ou=People,dc=example,dc=com
+uniqueMember: uid=user35,ou=zone2,ou=People,dc=example,dc=com
+uniqueMember: uid=user36,ou=zone2,ou=People,dc=example,dc=com
+uniqueMember: uid=user37,ou=zone2,ou=People,dc=example,dc=com
+uniqueMember: uid=user38,ou=zone2,ou=People,dc=example,dc=com
+uniqueMember: uid=user39,ou=zone2,ou=People,dc=example,dc=com
+uniqueMember: uid=user40,ou=zone2,ou=People,dc=example,dc=com
+uniqueMember: uid=user41,ou=zone2,ou=People,dc=example,dc=com
