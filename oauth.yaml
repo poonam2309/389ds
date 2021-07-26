@@ -1,0 +1,66 @@
+apiVersion: config.openshift.io/v1
+kind: OAuth
+metadata:
+  annotations:
+    include.release.openshift.io/self-managed-high-availability: "true"
+    include.release.openshift.io/single-node-developer: "true"
+    release.openshift.io/create-only: "true"
+  creationTimestamp: "2021-07-19T19:34:04Z"
+  generation: 9
+  managedFields:
+  - apiVersion: config.openshift.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:include.release.openshift.io/self-managed-high-availability: {}
+          f:include.release.openshift.io/single-node-developer: {}
+          f:release.openshift.io/create-only: {}
+      f:spec: {}
+    manager: cluster-version-operator
+    operation: Update
+    time: "2021-07-19T19:34:04Z"
+  - apiVersion: config.openshift.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:spec:
+        f:identityProviders: {}
+    manager: Mozilla
+    operation: Update
+    time: "2021-07-22T12:29:54Z"
+  name: cluster
+  resourceVersion: "1251905"
+  selfLink: /apis/config.openshift.io/v1/oauths/cluster
+  uid: c96faea9-653b-450e-b551-be818721170a
+spec:
+  identityProviders:
+  - htpasswd:
+      fileData:
+        name: htpass-secret
+    mappingMethod: claim
+    name: acmtesting5
+    type: HTPasswd
+  - htpasswd:
+      fileData:
+        name: htpasswd-p98rc
+    mappingMethod: claim
+    name: htpasswd
+    type: HTPasswd
+  - ldap:
+      attributes:
+        email: []
+        id:
+        - dn
+        name:
+        - cn
+        preferredUsername:
+        - uid
+      bindDN: cn=Directory Manager
+      bindPassword:
+        name: ldap-bind-password-bbgr4
+      insecure: true
+      url: ldap://34.72.39.122:389/ou=people,dc=example,dc=com?uid
+    mappingMethod: claim
+    name: ldap
+    type: LDAP
