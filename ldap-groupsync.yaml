@@ -1,0 +1,25 @@
+kind: LDAPSyncConfig
+apiVersion: v1
+url: ldap://34.72.39.122:389
+bindDN: cn=Directory Manager
+bindPassword: admin@123
+insecure: true
+rfc2307:
+    groupsQuery:
+        baseDN: "ou=epgs_application,dc=example,dc=com"
+        scope: sub
+        derefAliases: never
+        filter: (objectclass=groupOfUniqueNames)
+        pageSize: 0
+    groupUIDAttribute: dn 
+    groupNameAttributes: [ cn ] 
+    groupMembershipAttributes: [ uniqueMember ] 
+    usersQuery:
+        baseDN: "ou=People,dc=example,dc=com"
+        scope: sub
+        derefAliases: never
+        pageSize: 0
+    userUIDAttribute: dn 
+    userNameAttributes: [ uid ] 
+    tolerateMemberNotFoundErrors: false
+    tolerateMemberOutOfScopeErrors: false
