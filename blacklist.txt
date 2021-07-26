@@ -1,0 +1,4 @@
+cn=Accounting Managers,ou=Groups,dc=example,dc=com
+cn=HR Managers,ou=Groups,dc=example,dc=com
+cn=QA Managers,ou=Groups,dc=example,dc=com
+cn=PD Managers,ou=Groups,dc=example,dc=com
